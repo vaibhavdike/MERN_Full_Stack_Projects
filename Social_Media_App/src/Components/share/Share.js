@@ -13,7 +13,7 @@ export default function Share() {
             <div className="shareOptions">
               <div className="shareOption">
                     <PermMedia className='shareIcon'/>
-                <span className='shareOptionText'>this is 2nd change</span>
+                <span className='shareOptionText'>Photos and Videos</span>
               </div>
             </div>
           </div>
