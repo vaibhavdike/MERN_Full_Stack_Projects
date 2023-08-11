@@ -26,7 +26,7 @@ export default function Post() {
                     <snap className="postLikeCounter">32 people like it</snap>
                 </div>
                 <div className="postBottomRight">
-                    <span className="postCommentText">9 comments</span>
+                    <span className="postCommentText">9 comment</span>
                 </div>
             </div>
         </div>
