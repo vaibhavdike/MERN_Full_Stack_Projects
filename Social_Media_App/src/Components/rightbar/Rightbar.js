@@ -1,6 +1,5 @@
 import './rightbar.css';
 
-
 export default function Rightbar() {
   return (
     <div className='rightbar'>
@@ -17,7 +16,7 @@ export default function Rightbar() {
               <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
               <span className="rightbarOnline"></span>
               </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
+              <span className="rightbarUsername">Dike </span>
           </li>
           <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
