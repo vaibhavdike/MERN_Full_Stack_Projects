@@ -23,17 +23,17 @@ export const users=[
     {
   id:5,
   profilePicture:"/assets/Persons/5.jpg",
-  username:"Shakti Mohan",
+  username:"Pranali Wagh",
     },
     {
   id:6,
   profilePicture:"/assets/Persons/6.jpg",
-  username:"Mukti Mohan",
+  username:"tiger shraff",
     },
     {
   id:7,
   profilePicture:"/assets/Persons/7.jpg",
-  username:"Shakti Mohan",
+  username:"kirti mahajan",
     },
     {
   id:8,
@@ -69,7 +69,7 @@ export const post=[
     {
         id:2,
      
-        photo:"/assets/post/post2.jpg",
+        photo:"/assets/Persons/5.jpg",
         date:"15 min ago",
         userId:2,
         like:22,
@@ -87,7 +87,7 @@ export const post=[
     {
         id:4,
   
-        photo:"/assets/post/post4.jpg",
+        photo:"/assets/Persons/5.jpg",
         date:"5 min ago",
         userId:1,
         like:32,
@@ -150,7 +150,7 @@ export const post=[
     {
         id:11,
         desc:"Look at these post ",
-        photo:"/assets/Persons/5.jpg",
+        photo:"/assets/post/post5.jfif",
         date:"3 day ago",
         userId:9,
         like:32,
@@ -159,7 +159,7 @@ export const post=[
     {
         id:12,
         desc:"This is my first post :) ",
-        photo:"/assets/Persons/5.jpg",
+        photo:"/assets/post/post2.jpg",
         date:"5 day ago",
         userId:1,
         like:32,

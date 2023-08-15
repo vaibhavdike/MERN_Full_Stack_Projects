@@ -1,6 +1,7 @@
 import './sidebar.css';
 import { RssFeed ,Chat,PlayCircle,Groups,Bookmark,HelpOutline,WorkOutline,Event,School}from "@mui/icons-material";
-
+import {users} from '../../DumyData';
+import CloseFriend from '../closeFriend/CloseFriend';
 export default function Sidebar() {
   return (
 <div className='sidebar'>
@@ -61,181 +62,13 @@ export default function Sidebar() {
              </span>
             </li>
         </ul>
-        <buttton className="sidebarButton">Show </buttton>
+        <buttton className="sidebarButton">Show More </buttton>
         <hr className='sidebarHr'/>
         <ul className="sideFriedList">
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
-            <li className="sidebarFriend">
-                <img src="/assets/Persons/2.jpg" alt="" className="sidebarFriendImg" />
-                <span className='sidebarFriendName'>Pranav Joshi</span>
-            </li>
+            {users.map((u)=>(
+                <CloseFriend key={u.id} user={u}/>
+            ))}
+          
         </ul>
       </div>
 </div>

@@ -1,4 +1,6 @@
+import Online from '../online/Online';
 import './rightbar.css';
+import {users} from '../../DumyData';
 
 export default function Rightbar() {
   return (
@@ -11,104 +13,9 @@ export default function Rightbar() {
         <img className ='rightbarAd' src="/assets/Persons/ad.jpg" alt="" />
         <h4 className='rightbarTitle'>Online Friends</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className='rightbarProfileImg' src="/assets/Persons/3.jfif" alt="" />
-              <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Dike Vaibhav</span>
-          </li>
+         {users.map((u)=>(
+          <Online key={u.id} user={u}/>
+         ))}
         </ul>
       </div>
     </div>

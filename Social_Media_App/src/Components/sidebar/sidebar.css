@@ -7,6 +7,8 @@
 
 
     overflow-y: scroll;
+    position: sticky;
+    top: 0px;
 
   
 
@@ -57,20 +59,4 @@
     margin: 0;
     
     list-style: none;
-}
-.sidebarFriend{
-    display: flex;
-  align-items:center ;
-
-    margin-bottom: 15px;
-    position: relative;
-    left: -40px;
-}
-.sidebarFriendImg{
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
-    object-fit: cover;
-    margin-right: 15px;
-    
 }
