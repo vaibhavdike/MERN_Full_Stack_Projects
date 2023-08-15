@@ -3,7 +3,7 @@ import Profile from './Pages/profile/Profile';
 function App() {
   return (
 //  <Home/>
-<Profile/>
+ <Profile/> 
   );
     
     

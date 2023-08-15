@@ -3,10 +3,6 @@
     height: calc(100vh - 50px) ;
     overflow-y: scroll;
 
-  
-
-    
-   
 }
 ::-webkit-scrollbar{
     width: 1px;
@@ -54,3 +50,47 @@ font-size: 20px;
     margin-bottom: 20px;
 }
 
+.rightbarTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.rightbarfollowingImg{
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rightbarInfo{
+    margin-bottom: 30px;
+   margin-left: 15px;
+}
+.rightbarInfoItem{
+    margin-bottom: 10px;
+}
+.rightbarInfoKey{
+    font-weight: 600;
+    margin-right: 8px;
+    color: #555;
+}
+.rightbarInfoValue{
+    font-weight: 300;
+}
+.rightbarfollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rightbarfollowing{
+    display: flex;
+    flex-direction: column;
+     margin: 10px 0; 
+    cursor: pointer;
+}
+.rightbarfollowingName{
+    margin-top: 5px;
+    text-align: center;
+}
