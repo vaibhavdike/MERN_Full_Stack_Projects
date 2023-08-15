@@ -62,7 +62,7 @@ export default function Sidebar() {
              </span>
             </li>
         </ul>
-        <buttton className="sidebarButton">Show  </buttton>
+        <buttton className="sidebarButton">Show More </buttton>
         <hr className='sidebarHr'/>
         <ul className="sideFriedList">
             {users.map((u)=>(
