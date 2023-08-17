@@ -1,9 +1,13 @@
-// import Home from './Pages/home/Home';
-import Profile from './Pages/profile/Profile';
+import Home from './Pages/home/Home';
+// import Login from './Pages/login/Login';
+// import Register from './Pages/register/Register';
+// import Profile from './Pages/profile/Profile';
 function App() {
   return (
-//  <Home/>
- <Profile/> 
+ <Home/>
+//  <Profile/> 
+/* <Login/>  */
+/* <Register/> */
   );
     
     
