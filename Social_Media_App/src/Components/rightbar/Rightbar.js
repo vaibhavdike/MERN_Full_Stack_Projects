@@ -64,7 +64,7 @@ const HomeRightbar=()=>{
              </div>
              <div className="rightbarfollowing">
               <img className='rightbarfollowingImg' src="/assets/Persons/7.jpg" alt="" />
-              <span className='rightbarfollowingName'>Dipak </span>
+              <span className='rightbarfollowingName'>Dipak Pund</span>
              </div>
            </div>
            <img className ='rightbarAd' src="/assets/Persons/ad.jpg" alt="" />
