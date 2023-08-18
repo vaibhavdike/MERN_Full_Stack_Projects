@@ -6,8 +6,11 @@ function App() {
   return (
  <Home/>
 //  <Profile/> 
-/* <Login/>  */
+  // < Login/>  
+ 
 /* <Register/> */
+
+
   );
     
     
