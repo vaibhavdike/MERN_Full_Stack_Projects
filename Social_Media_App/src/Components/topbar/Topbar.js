@@ -1,4 +1,6 @@
 import "./topbar.css";
+import {Link} from "react-router-dom";
+
 import {Search,Person,Chat,Notifications} from "@mui/icons-material";
 export default function Topbar() {
     return (
@@ -6,7 +8,9 @@ export default function Topbar() {
         
 <div className='topbarContainer'>
     <div className="topbarleft">
-               <span className="logo">Vabsocial</span>
+             <Link to="/" style={{textDecoration:"none"}}>
+                <span className="logo">Vabsocial</span>
+                </Link>
           
                </div>
             <div className="topbarcenter">
