@@ -44,6 +44,9 @@ app.use('/api/users',userRoute);
 app.use("/api/auth",authRoute);
 app.use("/api/posts",postRoute);
 
+// app.get("/",(req,res)=>{
+// res.send("this is post 8000");
+// });
 
 //Listening http request on port 
 app.listen(8000,()=>{
