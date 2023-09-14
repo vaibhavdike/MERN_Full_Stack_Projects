@@ -5,18 +5,18 @@ import './Feed.css';
 import axios from "axios"
 
 export default function Feed() {
-  const [Post,setPost]=useState([]);
+  // const [Post,setPost]=useState([]);
 
 
-  useEffect(()=>{
+  // useEffect(()=>{
 
-    const fetchPost= async () => {
-       const res= await axios.get("posts/timeline/64e14418549787dcd1a50481");
-       console.log(res);
-    }
-    fetchPost();
+  //   const fetchPost= async () => {
+  //      const res= await axios.get("posts/timeline/64e14418549787dcd1a50481");
+  //      console.log(res);
+  //   }
+  //   fetchPost();
 
-  },[]) ;
+  // },[]) ;
   return (
     <div className='feed'>
       <div className="feedWrapper">
