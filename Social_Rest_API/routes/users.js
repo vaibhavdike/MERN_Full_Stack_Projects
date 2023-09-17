@@ -60,18 +60,17 @@ router.delete('/:id', async (req, res) => {
 //get user
 
 router.get("/:id",async (req,res)=>{
-    if(req.body.userId === req.params.id || req.body.isAdmin){
+    
 try{
 const user=await User.findById(req.params.id);
 const {password,updatedAt,createdAt,...other}=user._doc
 res.status(200).json(other);
     }catch(err){
         res.status(404).json(err);
+        console.log(err);
     }
 
-}else{
-    res.status(404).json("user not found");
-}
+
 
 
 });

@@ -93,7 +93,8 @@ module.exports = router;
 router.get("/timeline/:userId",async(req,res)=>{
 try{
     const currentUser=await User.findById(req.params.userId);
-    const userPost=await Post.find({userId:currentUser._id});
+    const userPost=await Post.find({userId:currentUser.
+        _id});
 
     const friendPost=await Promise.all(
         currentUser.followings.map((friendId)=>{
@@ -102,6 +103,7 @@ try{
     );
     res.json(userPost.concat(...friendPost));
 }catch(err){
+    console.log(err);
  res.status(404).json(err);
 }
 
