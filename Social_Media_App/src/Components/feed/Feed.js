@@ -8,7 +8,7 @@ import axios from "axios"
 
 
 
-export default function Feed() {
+export default function Feed({username}) {
   const [Posts,setPost]=useState([]);
 
 
@@ -18,18 +18,19 @@ export default function Feed() {
     const fetchPost= async () => {
     
      
-    const res= await axios.get("http://localhost:8000/api/posts/timeline/64e0c9f566beeb119a0c0ef8");
+    const res=username ? await axios.get("http://localhost:8000/api/posts/profile/"+username) :  
+    await axios.get("http://localhost:8000/api/posts/timeline/64e1333f26bf00c0a4b4b612");
      setPost(res.data)
       }
     fetchPost();
 
-  },[]) ;
+  },[username]) ;
   return (
     <div className='feed'>
       <div className="feedWrapper">
         <Share/>
         {Posts.map((p)=>(
-           <Post key ={p.id} post={p}/>
+           <Post key ={p._id} post={p}/>
         ))}
        
       

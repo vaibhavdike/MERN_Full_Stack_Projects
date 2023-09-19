@@ -15,6 +15,10 @@ const newUser= await new User({
    username:req.body.username,
    email:req.body.email,
    password:hashedpassword,
+   desc:req.body.desc,
+   city:req.body.city,
+   from:req.body.from,
+   relationship:req.body.relationship,
   })
 
 

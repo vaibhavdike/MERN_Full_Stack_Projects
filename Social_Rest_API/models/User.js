@@ -41,14 +41,17 @@ const UserSchema=new mongoose.Schema({
     desc:{
        type:String,
        max:50,
+       default:"Hello my friend"
     },
     city:{
         type:String,
         max:50,
+        default:""
     },
     from:{
         type:String,
         max:50,
+        default:""
     },
     relationship:{
         type:Number,
