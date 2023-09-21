@@ -39,7 +39,7 @@ export default function Topbar() {
                         </div>
                     <div className="topbariconsitem">
                         <Notifications/>
-                        <span className="topbariconitembadge"></span>
+                        <span className="topbariconitembadge">1</span>
                         </div>
 
                     
