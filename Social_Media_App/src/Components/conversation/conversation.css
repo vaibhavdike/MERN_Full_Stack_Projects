@@ -1,0 +1,17 @@
+.conversation{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.conersationImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.conversationName{
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px;
+}

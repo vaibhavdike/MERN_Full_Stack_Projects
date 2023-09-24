@@ -11,6 +11,7 @@ BrowserRouter as  Router,
   
 } from "react-router-dom";
 import { useContext } from 'react';
+import Messenger from './Pages/messenger/Messenger';
 
 
 function App() {
@@ -23,6 +24,7 @@ const {user}=useContext(AuthContext);
         <Route exact path="/" element={user ? <Home/> :<Register/>}/>
         <Route exact path="/login" element={user ? <Navigate to="/"/>: <Login/>}/>
         <Route exact path="/register" element={user ? <Navigate to="/"/>: <Register/>}/>
+        <Route exact path="/messenger" element={!user ? <Navigate to="/"/>: <Messenger/>}/>
         <Route path="/profile/:username" element={<Profile/>}/>
       </Routes>
    
