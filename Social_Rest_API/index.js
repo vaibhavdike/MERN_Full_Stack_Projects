@@ -10,6 +10,8 @@ const morgan=require('morgan');
 const userRoute=require('./routes/users');
 const authRoute=require('./routes/auth');
 const postRoute=require("./routes/post");
+const conversationRoute=require("./routes/conversation");
+const messageRoute=require('./routes/message');
 const cors = require("cors")
 const multer=require('multer');
 
@@ -62,6 +64,8 @@ console.log(err);
 app.use('/api/users',userRoute);
 app.use("/api/auth",authRoute);
 app.use("/api/posts",postRoute);
+app.use("/api/conversations",conversationRoute);
+app.use("/api/messeges",messageRoute);
 
 // app.get("/",(req,res)=>{
 // res.send("this is post 8000");
