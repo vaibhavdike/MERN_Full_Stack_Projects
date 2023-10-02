@@ -10,7 +10,7 @@ router.post("/",async(req,res)=>{
        const savemessage= await message.save();
        res.status(200).json(savemessage);
     }catch(err){
-        res.status(200).json(err);
+        res.status(400).json(err);
     }
 })
 
