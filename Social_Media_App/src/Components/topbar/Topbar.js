@@ -5,6 +5,7 @@ import {Search,Person,Chat,Notifications} from "@mui/icons-material";
 import { useContext } from "react";
 export default function Topbar() {
     const {user}=useContext(AuthContext);
+   
     const PF="/assets/Persons/";
     return (
                
@@ -33,10 +34,12 @@ export default function Topbar() {
                         <Person/>
                         <span className="topbariconitembadge">1</span>
                         </div>
+                        <Link to="/messenger" style={{textDecoration:"none",textDecorationColor:"white",color:"white"}}>
                     <div className="topbariconsitem">
                         <Chat/>
                         <span className="topbariconitembadge">2</span>
                         </div>
+                        </Link>
                     <div className="topbariconsitem">
                         <Notifications/>
                         <span className="topbariconitembadge">1</span>

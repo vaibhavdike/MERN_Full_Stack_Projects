@@ -12,7 +12,9 @@ export default function Messenger() {
   const [currentChat,setcurrentChat] =useState(null);
   const [message,setMessage] =useState(null);
 const [newMessage,setNewMessage]=useState("");
-    const {user}=useContext(AuthContext);
+    
+const {user}=useContext(AuthContext);
+
     const scrollref=useRef();
 
     useEffect(()=>{
@@ -45,7 +47,7 @@ const [newMessage,setNewMessage]=useState("");
 
 
         getConversation();
-    },[user._id])
+    },[user])
     
      const handleClick = async(e) =>{
         e.preventDefault();
@@ -68,6 +70,7 @@ const [newMessage,setNewMessage]=useState("");
 
 useEffect(()=>{
    scrollref.current?.scrollIntoView({behavior:"smooth"});
+   
 },[message])
 
 
